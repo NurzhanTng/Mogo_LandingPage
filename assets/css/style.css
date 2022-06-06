@@ -72,6 +72,15 @@ h1, h2, h3, h4, h5, h6 {
     color: #fce38a;
 }
 
+.nav__link:hover::after,
+.nav__link.active::after {
+    opacity: 1;
+}
+
+.nav__link.active {
+    color: #fce38a;
+}
+
 .nav__link::after {
     content: '';
     display: block;
@@ -87,10 +96,6 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
 
     transition: opacity .1s linear;
-}
-
-.nav__link:hover::after {
-    opacity: 1;
 }
 
 /* Intro */
@@ -160,4 +165,56 @@ h1, h2, h3, h4, h5, h6 {
 .btn:hover {
     background-color: #fff;
     color: #333;
+}
+
+/* Slider */
+
+.slider {
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.slider__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider__item {
+    width: 23%;
+    padding: 20px 0;
+    position: relative;
+
+    border-top: 3px solid #fff;
+    opacity: .7;
+
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.slider__item.active {
+    opacity: 1;
+}
+
+.slider__item.active::before {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 3px;
+
+    background-color: #f38181;
+
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 1;
+}
+
+.slider__number {
+    font-size: 24px;
+    font-weight: 700;
 }
