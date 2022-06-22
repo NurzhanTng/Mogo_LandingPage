@@ -236,6 +236,7 @@ hr {
 }
 
 .section_devices {
+    margin-bottom: 40px;
     padding-bottom: 0;
 
     background: #d9d9d9 url(../img/devices_background.png) center no-repeat;
@@ -423,4 +424,14 @@ hr {
     bottom: -80px;
     right: -100px;
     z-index: 1;
+}
+
+/* We do */
+
+.wedo {
+    display: flex;
+}
+
+.wedo__item {
+    width: 50%;
 }
