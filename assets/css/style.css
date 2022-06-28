@@ -548,6 +548,10 @@ hr {
     position: relative;
 }
 
+.review__item_long-margin-left {
+    padding-left: 255px;
+}
+
 .reviews__photo {
     border: 2px solid #95e1d3;
     height: 145px;
@@ -559,6 +563,24 @@ hr {
     z-index: 1;
 
     transform: translateY(-50%);
+}
+
+.reviews__photo_circled {
+    overflow: hidden;
+    width: 210px;
+    height: 210px;
+
+    border: 0;
+    border-radius: 50%;
+}
+
+.reviews__photo_circled img{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    z-index: 1;
+
+    transform: translateX(50%);
 }
 
 .reviews__text {
