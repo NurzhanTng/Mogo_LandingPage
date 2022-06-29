@@ -987,7 +987,21 @@ hr {
 }
 
 .footer__inner {
+    display: flex;
+    justify-content: space-between;
     padding-bottom: 65px;
+}
+
+.footer__col_first {
+    width: 40%;
+}
+
+.footer__col_second {
+    width: 30%;
+}
+
+.footer__col_third {
+    width: 22%;
 }
 
 .footer__logo {
@@ -1037,6 +1051,50 @@ hr {
 
     font-size: 18px;
     color: #95e1d3;
+}
+
+.footer__title {
+    margin: 15px 0 30px;
+
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+/* Blogs */
+
+.blogs__item {
+    margin-bottom: 30px;
+    align-items: center;
+    display: flex;
+}
+
+.blogs__img {
+    width: 120px;
+    height: 80px;
+}
+
+.blogs__content {
+    padding-left: 20px;
+}
+
+.blogs__title {
+    color: #333;
+    font-size: 12px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.blogs__title:hover {
+    text-decoration: underline;
+}
+
+.blogs__date {
+    font-size: 13px;
+    color: #999;
+    font-style: italic;
+    font-weight: 300;
 }
 
 /* Subscribe */
