@@ -986,6 +986,10 @@ hr {
     background-color: #f8f8f8;
 }
 
+.footer__inner {
+    padding-bottom: 65px;
+}
+
 .footer__logo {
     margin-bottom: 30px;
 
@@ -1035,3 +1039,63 @@ hr {
     color: #95e1d3;
 }
 
+/* Subscribe */
+
+.subscribe{
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+}
+
+.subscribe__input {
+    width: 60%;
+    height: 40px;
+    padding: 12px;
+
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    border-right: 0;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.1;
+    color: #333;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.subscribe__input::placeholder {
+    color: #ccc;
+}
+
+.subscribe__input:focus {
+    outline: 0;
+    border-color: #95e1d3;
+}
+
+.subscribe__btn {
+    width: 40%;
+    height: 40px;
+    padding: 12px 30px;
+
+    background-color: #95e1d3;
+    border: 0;
+    cursor: pointer;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+
+    transition: background .2s linear;
+}
+
+.subscribe__btn:hover {
+    background-color: #74c2b4;
+}
+
+.subscribe__btn:focus {
+    outline: 0;
+}
