@@ -1270,6 +1270,15 @@ hr {
     .stat__item:last-child {
         border: 0;
     }
+
+    /* Services */
+    .services__item {
+        width: 50%;
+        padding-bottom: 0;
+    }
+    .services__item_border {
+        border-bottom: 0;
+    }
 }
 
 @media (max-width: 770px) {
@@ -1302,6 +1311,31 @@ hr {
 
     .card__item:last-child {
         margin-bottom: 0;
+    }
+
+    /* Slider */
+    .slider__text {
+        display: none;
+    }
+
+    .slider__item.active::before {
+        width: 50%;
+    }
+    
+    /* Services */
+    .services {
+        justify-content: center;
+    }
+
+    .services__item {
+        width: 100%;
+        max-width: 400px;
+        padding-left: 55px;
+        padding-right: 0;
+    }
+
+    .services__icon {
+        left: 0;
     }
 }
 
