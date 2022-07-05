@@ -1337,6 +1337,21 @@ hr {
     .services__icon {
         left: 0;
     }
+
+    /* Wedo */
+    .wedo {
+        justify-content: center;
+    }
+
+    .wedo__img {
+        display: none;
+    }
+
+    .wedo__item {
+        width: 100%;
+        max-width: 570px;
+        align-items: center;
+    }
 }
 
 @media (max-width: 575px) {
@@ -1374,5 +1389,16 @@ hr {
 
     .stat__count {
         font-size: 52px;
+    }
+
+    /* Devices */
+    .devices {
+        max-width: 300px;
+    }
+
+    .devices__item_iphone {
+        width: 180px;
+        bottom: -50px;
+        right: -80px;
     }
 }
